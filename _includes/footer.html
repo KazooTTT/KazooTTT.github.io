@@ -137,21 +137,15 @@
 
 
 <!-- Baidu Tongji -->
-{% if site.ba_track_id %}
 <script>
-    // dynamic User by Hux
-    var _baId = '{{ site.ba_track_id }}';
-
-    // Originial
     var _hmt = _hmt || [];
-    (function () {
+    (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?"+_baId;
+        hm.src = "https://hm.baidu.com/hm.js?41fb7b65befdc0e7640ed12c642a88c4";
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
 </script>
-{% endif %}
 
 
 <!-- Side Catalog -->
