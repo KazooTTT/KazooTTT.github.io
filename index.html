@@ -16,14 +16,14 @@ description: "web前端实习生 | 资深bug开发工程师"
         {% endif %}
         <div class="post-content-preview">
             {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
+                {{ post.content | strip_html | truncate:180 }}
             {% else %}
-                {{ post.content | strip_html | truncate:200 }}
+                {{ post.content | strip_html | truncate:80 }}
             {% endif %}
         </div>
     </a>
     <p class="post-meta">
-        Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}
+        修改日期:{{ post.date | date: "%Y-%m-%d" }}
     </p>
 </div>
 <hr>

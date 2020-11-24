@@ -1281,8 +1281,9 @@ samp {
   font-family: 'Lora', 'Times New Roman', serif;
   color: #a3a3a3;
   font-size: 16px;
-  font-style: italic;
+  /*font-style: italic;*/
   margin-top: 0;
+  float: right;
 }
 .post-preview > .post-meta > a {
   text-decoration: none;
@@ -1306,9 +1307,14 @@ samp {
     font-size: 18px;
   }
 }
+hr{
+  margin-top: 33px;
+  width: 100%;
+}
+
 .post-content-preview {
   font-size: 13px;
-  font-style: italic;
+  /*font-style: italic;*/
   color: #a3a3a3;
 }
 .post-content-preview:hover {
@@ -1590,13 +1596,20 @@ img::-moz-selection {
   font-size: 13px;
 }
 .mini-post-list .post-preview > .post-meta {
-  position: absolute;
-  right: 5px;
+  /*position: absolute;*/
+  float: right;
   bottom: 0px;
   margin: 0px;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 12px;
 }
+.mini-post-list .post-preview .post-date{
+  float: right;
+  font-size: small;
+  color: gray;
+  margin:0
+}
+
 @media only screen and (min-width: 768px) {
   .mini-post-list .post-preview {
     margin-left: 20px;
@@ -1610,6 +1623,12 @@ img::-moz-selection {
   }
   .mini-post-list .post-preview .post-meta {
     font-size: 18px;
+  }
+  .mini-post-list .post-preview .post-date{
+    float: right;
+    font-size: small;
+    color: gray;
+    margin:0
   }
 }
 /* Tags support End*/
