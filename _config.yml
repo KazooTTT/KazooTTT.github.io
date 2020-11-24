@@ -1,8 +1,8 @@
 # Site settings
 title: Kazoo Blog
 SEOTitle: 小买的博客 | Kazoo Blog
-header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+header-img: https://kazoottt-1256684243.cos.ap-chengdu.myqcloud.com/home-bg.jpg
+email: wangyijin1999@qq.com
 url: "https://http://kazoottt.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -74,7 +74,7 @@ sidebar-avatar: https://avatars2.githubusercontent.com/u/31075337?s=460&u=a9742b
 
 # Featured Tags
 featured-tags: true                     # whether or not using Feature-Tags
-featured-condition-size: 2              # A tag will be featured if the size of it is more than this condition value
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
 
 
 

@@ -8,59 +8,69 @@ tags:
   - Vim
   - Emacs
 ---
+# Vue书籍
 
-Emacs tend to provide a good support for functional programming languages. Indeed, many FP language community exclusively use Emacs and give only first-party IDE supports to Emacs, such as Coq, Agda, Standard ML, Clojure, etc.
+## 第1章 Vue.js基础
 
-For the purpose of programming Coq with Proof General, I started to try with Emacs. I quickly found Spacemacs a good alternatives for me...someone had get used to Vim keybindings and want to get some thing useful ASAP w/o configuring a long list as my `.vimrc`.
+ Vue还监控data对象的变化，并在数据变化时更新DOM。
 
-Though the overall experience is pretty smooth, many quirks about Spacemacs are always being forgotten and had to look up again and again, so I decided to open a note for some specific "workflow" that I often used.
+### 响应式
 
-Yes this is more like a note publishing online for the purpose of "on-demand accessible". So don't expect good writing anyways.
+实现方法：
 
+1. 脏检查 [什么是脏检查？ - eret9616 - 博客园](../../My%20Links%201b94ba657ad54bc1a85d4a6b89836103/%E4%BB%80%E4%B9%88%E6%98%AF%E8%84%8F%E6%A3%80%E6%9F%A5%EF%BC%9F%20-%20eret9616%20-%20%E5%8D%9A%E5%AE%A2%E5%9B%AD%20322a2a5d1c204ffeb9dd23c211641498.md) 
+2. defineProperty，setter getter
 
-### Vim-binding
-
-Choose `evil`!
-
-
-### Airline
-
-It's there!
+**使用ref直接访问元素**
 
 
-### Nerd Tree / File Sidebar
 
-`SPC f t` for _file tree_. The keybindings for specific operations are very different w/ Vim NerdTree though.
+### **生命周期钩子**
+
+<img src="https://cn.vuejs.org/images/lifecycle.png" alt="Vue 实例生命周期" style="zoom: 50%;" />
+
+【对于组件、vue实例】
+
+ 一共有8个
+
+带有“before”前缀的钩子会在相关工作开始之前被调用，然后，真正执行相关工作的钩子才会被触发。
+
+[生命周期钩子函数 vue官方文档](https://cn.vuejs.org/v2/api/#%E9%80%89%E9%A1%B9-%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E9%92%A9%E5%AD%90)
+
+beforeCreate 
+
+created
+
+beforeMount
+
+mounted
+
+beforeUpdate
+
+updated
+
+beforeDestroy
+
+destroyed
+
+【对于指令】
+
+bind、inserted、update、componentUpdated和unbind
+
+使用Vue.directive()
 
 
-### Shell / Terminal
-
-I occasionally use [Neovim's terminal emulator](https://neovim.io/doc/user/nvim_terminal_emulator.html) but in most of the time I just `cmd + D` for iTerms splitted window. 
-
-I even mappped `:D` into split-then-terminal to make the experience on par ;)
-
-```vim
-command! -nargs=* D  belowright split | terminal <args>
-```
-
-Anyways, Spacemacs does provide a `:shell` that naturally split a window below for terminal. The experience is not very good though.
 
 
-### Tabs / Workspaces
 
-I tend to open multiple _workspace_. Though people might found Vim tabs useful, I am exclusively use iTerm tabs for similar jobs. However Spacemacs is not living in a terminal.
-
-[r/spacemacs - Vim-style tabs?](https://www.reddit.com/r/spacemacs/comments/5w5d2s/vimstyle_tabs/) gave me a good way to approximate the experience by using [Spacemacs Workspaces](http://spacemacs.org/doc/DOCUMENTATION.html#workspaces): `SPC l w <nth>` trigger a so-called "layout transient state" (I have no idea what's that mean) to open N-th workspaces, and use `gt`/`gT` to switch between.
+## 第6章 使用vuex实现状态管理
 
 
-### Fuzz File Name Search / Rg
-
-`SPC f f`
 
 
-### Buffers
 
-`SPC b b`
+
+
 
 
 

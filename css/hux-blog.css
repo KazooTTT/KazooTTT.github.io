@@ -101,17 +101,19 @@
 }
 .side-catalog .catalog-body .h1_nav,
 .side-catalog .catalog-body .h2_nav {
-  margin-left: 0;
   font-size: 13px;
   font-weight: bold;
 }
+.side-catalog .catalog-body .h2_nav {
+    margin-left: 20px;
+}
 .side-catalog .catalog-body .h3_nav {
-  margin-left: 6px;
+  margin-left: 40px;
   font-size: 13px;
   font-weight: bold;
 }
 .side-catalog .catalog-body .h4_nav {
-  margin-left: 12px;
+  margin-left: 60px;
   font-size: 12px;
 }
 .side-catalog .catalog-body .h4_nav a {
@@ -186,7 +188,7 @@
     Multi-line snackbar height: 80 dp
     Text: Roboto Regular 14 sp
     Action button: Roboto Medium 14 sp, all-caps text
-    Default background fill: #323232 100%  
+    Default background fill: #323232 100%
   */
     left: 0px;
     right: 0px;
@@ -1159,11 +1161,11 @@ samp {
 .intro-header .site-heading {
   padding: 95px 0 70px;
 }
-@media only screen and (min-width: 768px) {
-  .intro-header .site-heading {
-    padding: 150px 0;
-  }
-}
+/*@media only screen and (min-width: 768px) {*/
+/*  .intro-header .site-heading {*/
+/*    padding: 150px 0;*/
+/*  }*/
+/*}*/
 .intro-header .site-heading,
 .intro-header .page-heading {
   text-align: center;
@@ -1487,14 +1489,14 @@ img::-moz-selection {
     margin-right: 5px;
   }
 }
-#tag-heading {
-  padding: 70px 0 60px;
-}
-@media only screen and (min-width: 768px) {
-  #tag-heading {
-    padding: 55px 0;
-  }
-}
+/*#tag-heading {*/
+/*  padding: 70px 0 60px;*/
+/*}*/
+/*@media only screen and (min-width: 768px) {*/
+/*  #tag-heading {*/
+/*    padding: 55px 0;*/
+/*  }*/
+/*}*/
 #tag_cloud {
   margin: 20px 0 15px 0;
 }
