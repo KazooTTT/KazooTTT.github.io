@@ -29,7 +29,8 @@
   color: #0085a1 !important;
 }
 .sidebar-container .tags a {
-  border-color: #bfbfbf;
+  border-color: #3b3939;
+  color: #3b3939;
 }
 .sidebar-container .tags a:hover,
 .sidebar-container .tags a:active {
