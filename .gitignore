@@ -14,4 +14,5 @@ node_modules
 codeStyles
 _doc
 .jekyll-metadata
+.idea
 
