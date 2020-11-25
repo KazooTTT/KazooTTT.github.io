@@ -1,6 +1,7 @@
 ---
 layout: page
 description: "web前端实习生 | 资深bug开发工程师"
+header-img: https://kazoottt-1256684243.cos.ap-chengdu.myqcloud.com/met_arnold_bocklin_1880.jpg
 ---
 
 {% for post in paginator.posts %}
@@ -36,8 +37,7 @@ description: "web前端实习生 | 资深bug开发工程师"
     <li class="previous">
         <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
     </li>
-    {% endif %}
-    {% if paginator.next_page %}
+    {% endif %} {% if paginator.next_page %}
     <li class="next">
         <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
     </li>
