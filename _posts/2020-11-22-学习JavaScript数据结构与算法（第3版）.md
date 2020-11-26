@@ -1,7 +1,7 @@
 ---
 layout: post
-title: [读书笔记]学习JavaScript数据结构与算法（第3版）
-sort: 读书笔记
+title: '[读书笔记]学习JavaScript数据结构与算法（第3版）'
+sort: '读书笔记'
 header-style: text
 tags:
   - JavaScript
